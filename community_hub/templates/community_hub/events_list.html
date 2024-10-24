@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'community_hub/styles.css' %}">
+        <title>Event Hub</title>
+    </head>
+    <body>
+        <h1>Community Events List</h1>
+        <a href="{% url 'event_form' %}" class="link_button">Add an event</a>
+        {% for event in events%}
+            <div class="event_item">
+                <h3><a href="{{event.id}}">{{event.title}}</a></h3>
+                <p>{{event.description}}</p>
+                <p>{{event.location}}</p>
+                <p>{{event.date_time}}</p>
+            </div>
+        {% endfor %}
+    </body>
+</html>

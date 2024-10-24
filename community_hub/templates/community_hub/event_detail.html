@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'community_hub/styles.css' %}">
+        <title>Event Hub</title>
+    </head>
+    <body>
+        <h1>Community Events List</h1>
+        <a href="{% url 'event_list' %}" class="link_button">See full list</a>
+        <h3>{{event.title}}</h3>
+        <p>{{event.description}}</p>
+        <p>{{event.location}}</p>
+        <p>{{event.date_time}}</p>
+    </body>
+</html>
