@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: antiquewhite;
+}
+
+.event_item {
+    background-color: navy;
+    border-radius: 5%;
+    width: 350px;
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    margin: 10px auto;
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.link_button {
+    background-color: cornflowerblue;
+    color: black;
+    padding: 5px;
+    border-radius: 15%;
+}
